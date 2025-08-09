@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio | ED</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Canvas -->
+    <canvas id="background-canvas"></canvas>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">EDProgrammerist</a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content animate-fade-in">
+                    <h1 class="hero-title">Hi, I'm <span class="text-primary">Ed James Ursal</span></h1>
+                    <h2 class="hero-subtitle">BSIT Student & UI/UX Enthusiast Kunuhay</h2>
+                    <p class="hero-description">
+                        I build exceptional digital experiences that are fast, accessible, and visually appealing. 
+                        With expertise in both frontend and backend technologies, I create complete solutions that solve real business problems.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary">
+                            <i class="fas fa-user"></i> About Me
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image animate-item">
+                        <div class="image-container">
+                            <img src="/images/meV2.jpg" alt="Jema">
+                        </div>
+                    </div>
+                    <div class="about-text animate-item">
+                        <h3>Who I Am</h3>
+                        <p>
+                            I'm a passionate full-stack developer with 2+ years of experience building web applications. 
+                            I specialize in React, Node.js, and modern JavaScript frameworks.
+                        </p>
+                        <p>
+                            My approach combines technical expertise with an eye for design to create solutions that are both functional and beautiful. 
+                            I believe in writing clean, maintainable code and creating intuitive user experiences.
+                        </p>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <h4>Location</h4>
+                                <p>Cebu</p>
+                            </div>
+                            <div class="info-item">
+                                <h4>Email</h4>
+                                <p>Paristonnn@gmail.com</p>
+                            </div>
+                            <div class="info-item">
+                                <h4>Availability</h4>
+                                <p>BSIT Student</p>
+                            </div>
+                            <div class="info-item">
+                                <h4>Experience</h4>
+                                <p>2+ Years</p>
+                            </div>
+                        </div>
+                        <div class="about-buttons">
+                            <a href="#" class="btn btn-outline">
+                                <i class="fas fa-file-alt"></i> Download CV
+                            </a>
+                            <a href="#contact" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i> Hire Me
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">My Journey Kunuhay naa</h3>
+                <div class="timeline">
+                    <div class="timeline-item animate-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Beginner Frontend Developer</h4>
+                            <p class="timeline-date">2021 - Present</p>
+                            <p class="timeline-company">Tech Innovations Inc.</p>
+                            <p class="timeline-description">
+                                Leading the frontend development team, implementing best practices, and architecting scalable solutions for enterprise clients.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item animate-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Frontend Developer</h4>
+                            <p class="timeline-date">2018 - 2021</p>
+                            <p class="timeline-company">Digital Solutions Ltd.</p>
+                            <p class="timeline-description">
+                                Developed responsive web applications using React and modern JavaScript frameworks. Collaborated with UX designers to implement pixel-perfect interfaces.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item animate-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Web Development Bootcamp</h4>
+                            <p class="timeline-date">2018</p>
+                            <p class="timeline-company">Code Academy</p>
+                            <p class="timeline-description">
+                                Intensive 12-week program focused on full-stack web development, including JavaScript, React, Node.js, and database technologies.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item animate-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Bachelor's of Science in Information Technology.</h4>
+                            <p class="timeline-date">2024 - 2025</p>
+                            <p class="timeline-company">Cordova Public College</p>
+                            <p class="timeline-description">
+                                Focused on software engineering principles, algorithms, and web technologies. Graduated with honors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="container">
+                <h2 class="section-title">Services I Offer</h2>
+                <p class="section-description">
+                    I provide end-to-end solutions for your digital needs, from concept to deployment.
+                </p>
+                <div class="services-grid">
+                    <div class="service-card animate-item">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <p>
+                            Building responsive, accessible, and performant user interfaces using modern frameworks like React and Next.js.
+                        </p>
+                    </div>
+                    <div class="service-card animate-item">
+                        <div class="service-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>
+                            Creating intuitive and visually appealing user experiences with a focus on usability and conversion optimization.
+                        </p>
+                    </div>
+                    <div class="service-card animate-item">
+                        <div class="service-icon">
+                            <i class="fas fa-file-code"></i>
+                        </div>
+                        <h3>Full Stack Development</h3>
+                        <p>
+                            End-to-end application development from database design to API implementation and frontend integration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    Here are some of my recent projects. Each one was built with a focus on performance, accessibility, and user experience.
+                </p>
+                <div class="projects-grid">
+                    <div class="project-card animate-item">
+                        <div class="project-image">
+                            <img src="images/no.11.gif" alt="E-commerce Platform">
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce Platform</h3>
+                            <p>
+                                A full-stack e-commerce solution with payment integration and admin dashboard.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Stripe</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-outline">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="#" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card animate-item">
+                        <div class="project-image">
+                            <img src="images/no.11.gif" alt="Task Management App">
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>
+                                A collaborative task management tool with real-time updates and team features.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">Tailwind CSS</span>
+                                <span class="tag">Redux</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-outline">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="#" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card animate-item">
+                        <div class="project-image">
+                            <img src="images/no.11.gif" alt="Weather Dashboard">
+                        </div>
+                        <div class="project-content">
+                            <h3>Weather Dashboard</h3>
+                            <p>
+                                An interactive weather application with location-based forecasts and historical data.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">OpenWeather API</span>
+                                <span class="tag">Chart.js</span>
+                                <span class="tag">Geolocation</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-outline">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="#" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="#" class="btn btn-outline">
+                        <i class="fas fa-external-link-alt"></i> View All Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-description">
+                    I've worked with a variety of technologies and frameworks in the web development ecosystem.
+                </p>
+                <div class="skills-grid">
+                    <div class="skill-card animate-item">
+                        <div class="skill-progress" data-progress="90">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" class="skill-circle-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="skill-circle-progress" style="--progress: 90"></circle>
+                            </svg>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <h3>React</h3>
+                    </div>
+                    <div class="skill-card animate-item">
+                        <div class="skill-progress" data-progress="85">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" class="skill-circle-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="skill-circle-progress" style="--progress: 85"></circle>
+                            </svg>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-card animate-item">
+                        <div class="skill-progress" data-progress="80">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" class="skill-circle-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="skill-circle-progress" style="--progress: 80"></circle>
+                            </svg>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <h3>TypeScript</h3>
+                    </div>
+                    <div class="skill-card animate-item">
+                        <div class="skill-progress" data-progress="25">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" class="skill-circle-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="skill-circle-progress" style="--progress: 25"></circle>
+                            </svg>
+                            <span class="skill-percentage">50%</span>
+                        </div>
+                        <h3>Node.js</h3>
+                    </div>
+                </div>
+
+                <div class="skills-details">
+                    <div class="skill-detail animate-item">
+                        <h3>Frontend Development</h3>
+                        <p>
+                            My frontend development approach focuses on creating responsive, accessible, and performant user interfaces. 
+                            I use modern frameworks and tools to build scalable applications.
+                        </p>
+                        <ul class="skill-list">
+                            <li><span class="skill-dot"></span> Component-based architecture with React</li>
+                            <li><span class="skill-dot"></span> State management with Redux, Context API, and Zustand</li>
+                            <li><span class="skill-dot"></span> Modern CSS with Tailwind, Styled Components, and CSS Modules</li>
+                            <li><span class="skill-dot"></span> Animation and interaction with CSS and JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="skill-detail animate-item">
+                        <h3>Backend Development</h3>
+                        <p>
+                            I build robust and scalable backend systems that power modern web applications. 
+                            My focus is on creating secure, efficient, and maintainable APIs.
+                        </p>
+                        <ul class="skill-list">
+                            <li><span class="skill-dot"></span> RESTful and GraphQL APIs with Node.js and Express</li>
+                            <li><span class="skill-dot"></span> Database design and optimization (MongoDB, PostgreSQL)</li>
+                            <li><span class="skill-dot"></span> Authentication and authorization systems</li>
+                            <li><span class="skill-dot"></span> Serverless architecture with AWS Lambda and Vercel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="achievements section">
+            <div class="container">
+                <h2 class="section-title">Achievements & Recognition</h2>
+                <p class="section-description">
+                    Highlights from my professional journey and contributions to the tech community.
+                </p>
+                <div class="achievements-grid">
+                    <div class="achievement-card animate-item">
+                        <div class="achievement-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>Best Web Application Award</h3>
+                        <p class="achievement-org">Web Dev Summit 2022</p>
+                        <p class="achievement-date">November 2022</p>
+                        <p class="achievement-description">
+                            Recognized for creating an innovative web application with exceptional user experience and technical implementation.
+                        </p>
+                    </div>
+                    <div class="achievement-card animate-item">
+                        <div class="achievement-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>Open Source Contributor</h3>
+                        <p class="achievement-org">React Community</p>
+                        <p class="achievement-date">2020 - Present</p>
+                        <p class="achievement-description">
+                            Active contributor to React ecosystem with over 500 contributions and 5 maintained packages.
+                        </p>
+                    </div>
+                    <div class="achievement-card animate-item">
+                        <div class="achievement-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>Speaker</h3>
+                        <p class="achievement-org">Various Tech Conferences</p>
+                        <p class="achievement-date">2019 - Present</p>
+                        <p class="achievement-description">
+                            Regular speaker at industry conferences on topics including frontend architecture, performance optimization, and accessibility.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials section">
+            <div class="container">
+                <h2 class="section-title">Client Testimonials</h2>
+                <p class="section-description">
+                    What people say about working with me and the results we've achieved together.
+                </p>
+                <div class="testimonials-slider">
+                    <div class="testimonials-track">
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-content">
+                                Bryan A delivered an exceptional product that exceeded our expectations. His attention to detail and ability to translate our requirements into a beautiful, functional interface was impressive.
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">
+                                    <img src="images/grid1.png" alt="">
+                                </div>
+                                <div class="testimonial-info">
+                                    <h4>@Bryan A. Amoin</h4>
+                                    <p>Product Manager at TechCorp</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-content">
+                                Working with Bryan T was a pleasure. He not only built our platform but also provided valuable insights that improved our overall product strategy. Highly recommended!
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">
+                                    <img src="images/grid1.png" alt="Michael Chen">
+                                </div>
+                                <div class="testimonial-info">
+                                    <h4>@Bryan T. Tampus</h4>
+                                    <p>CEO at StartupX</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-content">
+                              Joseph work on our website redesign resulted in a 40% increase in conversion rates. His understanding of both design principles and technical implementation is rare and valuable.
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">
+                                    <img src="images/grid1.png" alt="Emily Rodriguez">
+                                </div>
+                                <div class="testimonial-info">
+                                    <h4>@Joseph Dinglasa</h4>
+                                    <p>Marketing Director at GrowthCo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-controls">
+                        <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                        <div class="testimonial-dots">
+                            <span class="testimonial-dot active"></span>
+                            <span class="testimonial-dot"></span>
+                            <span class="testimonial-dot"></span>
+                        </div>
+                        <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog section">
+            <div class="container">
+                <h2 class="section-title">Latest Articles</h2>
+                <p class="section-description">
+                    I write about web development, design, and technology. Check out my latest articles.
+                </p>
+                <div class="blog-grid">
+                    <div class="blog-card animate-item">
+                        <div class="blog-image">
+                            <img src="images/no.8.gif" alt="Building Accessible React Applications">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>June 15, 2023</span>
+                            </div>
+                            <h3>Building Accessible React Applications</h3>
+                            <p>
+                                Learn how to create React applications that are accessible to all users, including those with disabilities.
+                            </p>
+                            <a href="#" class="blog-link">Read More</a>
+                        </div>
+                    </div>
+                    <div class="blog-card animate-item">
+                        <div class="blog-image">
+                            <img src="images/no.9.gif" alt="Performance Optimization Techniques for Next.js">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>May 22, 2023</span>
+                            </div>
+                            <h3>Performance Optimization Techniques for Next.js</h3>
+                            <p>
+                                Discover advanced strategies to improve the performance of your Next.js applications.
+                            </p>
+                            <a href="#" class="blog-link">Read More</a>
+                        </div>
+                    </div>
+                    <div class="blog-card animate-item">
+                        <div class="blog-image">
+                            <img src="images/no.10.gif" alt="The Future of Web Development: What's Coming in 2024">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>April 10, 2023</span>
+                            </div>
+                            <h3>The Future of Web Development: What's Coming in 2024</h3>
+                            <p>
+                                Explore upcoming trends and technologies that will shape the future of web development.
+                            </p>
+                            <a href="#" class="blog-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="#" class="btn btn-outline">
+                        <i class="fas fa-external-link-alt"></i> View All Articles
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">
+                    Have a project in mind or want to chat? Feel free to reach out!
+                </p>
+                <div class="contact-container">
+                    <div class="contact-info animate-item">
+                        <h3>Contact Information</h3>
+                        <p>
+                            I'm currently available for freelance work and full-time positions. If you have a project that needs some creative touch, I'd love to hear about it.
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>@Paristonnn@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-calendar"></i>
+                                </div>
+                                <div>
+                                    <h4>Availability</h4>
+                                    <p>Monday-Friday, 9AM-6PM PST</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div>
+                                    <h4>Response Time</h4>
+                                    <p>Within 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <h4>Connect with me</h4>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container animate-item">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                        <div id="form-success" class="form-success">
+                            <div class="success-icon">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                            <h3>Message Sent!</h3>
+                            <p>Thanks for reaching out. I'll get back to you as soon as possible.</p>
+                            <button id="send-another" class="btn btn-primary">Send Another Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>@JamesED</h3>
+                    <p>
+                        Full Stack Developer specializing in creating exceptional digital experiences with modern web technologies.
+                    </p>
+                    <p class="copyright">
+                        © <span id="current-year"></span> ED. All rights reserved.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Frontend Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Full Stack Development</a></li>
+                        <li><a href="#">Consulting</a></li>
+                        <li><a href="#">Code Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>
+                        Subscribe to my newsletter for the latest articles, tutorials, and updates.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Designed and built with by @JamesED</p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="background.js"></script>
+</body>
+</html>
+
